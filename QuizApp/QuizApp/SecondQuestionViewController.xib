@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondQuestionViewController" customModule="QuizApp" customModuleProvider="target">
+            <connections>
+                <outlet property="SecondResultImage" destination="Ugv-fZ-ZaC" id="Gvy-1l-Oo1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3e-cU-zVb">
+                    <rect key="frame" x="37.666666666666657" y="93" width="300" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="GAB-zD-F7G"/>
+                        <constraint firstAttribute="height" constant="43" id="sIC-B9-k0N"/>
+                    </constraints>
+                    <string key="text">問2  2002年に日韓W杯が開催されました。
+その大会の優勝国はどこでしょうか？</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nx3-Fd-fAu">
+                    <rect key="frame" x="137" y="175" width="100" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="Xfa-T5-WmJ"/>
+                        <constraint firstAttribute="height" constant="60" id="vRX-AM-9bB"/>
+                    </constraints>
+                    <state key="normal" image="260px-Flag_of_Brazil.svg"/>
+                    <connections>
+                        <action selector="tappedFirstChoiceButton:" destination="-1" eventType="touchUpInside" id="CQi-7I-Ggi"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frS-tb-obm">
+                    <rect key="frame" x="137" y="329" width="100" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="Pgl-KR-261"/>
+                        <constraint firstAttribute="height" constant="60" id="aqV-8X-huG"/>
+                    </constraints>
+                    <state key="normal" image="malaysia"/>
+                    <connections>
+                        <action selector="tappedSecondChoiceButton:" destination="-1" eventType="touchUpInside" id="c85-2H-rMN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awo-oy-Rdz">
+                    <rect key="frame" x="137" y="252" width="100" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="ADM-C1-w1C"/>
+                        <constraint firstAttribute="height" constant="60" id="MPB-rq-eig"/>
+                    </constraints>
+                    <state key="normal" image="mauritania"/>
+                    <connections>
+                        <action selector="tappedThirdChoiceButton:" destination="-1" eventType="touchUpInside" id="Bv4-MC-hcM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Gd-dJ-whg">
+                    <rect key="frame" x="137" y="406" width="100" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="Nao-3I-eDE"/>
+                        <constraint firstAttribute="height" constant="60" id="cIl-Mu-13R"/>
+                    </constraints>
+                    <state key="normal" image="spain"/>
+                    <connections>
+                        <action selector="tappedFourthChoiceButton:" destination="-1" eventType="touchUpInside" id="6Sf-aq-cCu"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ugv-fZ-ZaC">
+                    <rect key="frame" x="127" y="647" width="122" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="0qL-Zr-N1S"/>
+                        <constraint firstAttribute="width" constant="120" id="W56-AV-9J4"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ebz-tZ-4Jn">
+                    <rect key="frame" x="137" y="483" width="100" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="Yoj-Tr-nht"/>
+                        <constraint firstAttribute="width" constant="100" id="dpg-eX-pNH"/>
+                    </constraints>
+                    <state key="normal" image="portugal"/>
+                    <connections>
+                        <action selector="tappedFifthChoiceButton:" destination="-1" eventType="touchUpInside" id="btl-uY-Eya"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.95041514829999996" green="1" blue="0.2255587433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nx3-Fd-fAu" secondAttribute="trailing" constant="138" id="0h0-TV-PWq"/>
+                <constraint firstItem="Ebz-tZ-4Jn" firstAttribute="top" secondItem="6Gd-dJ-whg" secondAttribute="bottom" constant="17" id="1vQ-he-rgC"/>
+                <constraint firstItem="frS-tb-obm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="137" id="2na-PP-KaV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ebz-tZ-4Jn" secondAttribute="trailing" constant="138" id="A8E-Sb-ZQM"/>
+                <constraint firstItem="6Gd-dJ-whg" firstAttribute="top" secondItem="frS-tb-obm" secondAttribute="bottom" constant="17" id="JFV-fP-N8S"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Awo-oy-Rdz" secondAttribute="trailing" constant="138" id="KT1-q7-Q9g"/>
+                <constraint firstItem="6Gd-dJ-whg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="137" id="NzR-dM-uqJ"/>
+                <constraint firstItem="Awo-oy-Rdz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="137" id="OWL-vq-LVU"/>
+                <constraint firstItem="Ugv-fZ-ZaC" firstAttribute="top" secondItem="Ebz-tZ-4Jn" secondAttribute="bottom" constant="104" id="Twb-zW-DVn"/>
+                <constraint firstItem="Awo-oy-Rdz" firstAttribute="top" secondItem="nx3-Fd-fAu" secondAttribute="bottom" constant="17" id="bAr-kP-a9B"/>
+                <constraint firstItem="Ebz-tZ-4Jn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="137" id="e7I-TQ-awa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="frS-tb-obm" secondAttribute="trailing" constant="138" id="ht7-c9-nCR"/>
+                <constraint firstItem="nx3-Fd-fAu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="137" id="k16-fZ-y7I"/>
+                <constraint firstItem="frS-tb-obm" firstAttribute="top" secondItem="Awo-oy-Rdz" secondAttribute="bottom" constant="17" id="oC9-wt-FUo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6Gd-dJ-whg" secondAttribute="trailing" constant="138" id="pj7-3r-Bab"/>
+                <constraint firstItem="z3e-cU-zVb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="49" id="rIC-uE-KCt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ugv-fZ-ZaC" secondAttribute="trailing" constant="126" id="uxj-06-kR3"/>
+                <constraint firstItem="z3e-cU-zVb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="v7Z-p2-wYY"/>
+                <constraint firstItem="nx3-Fd-fAu" firstAttribute="top" secondItem="z3e-cU-zVb" secondAttribute="bottom" constant="39" id="w87-tB-bx2"/>
+                <constraint firstItem="Ugv-fZ-ZaC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="127" id="zbs-0C-5vQ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="132" y="154.43349753694582"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="260px-Flag_of_Brazil.svg" width="260" height="182"/>
+        <image name="malaysia" width="400" height="267"/>
+        <image name="mauritania" width="227" height="151"/>
+        <image name="portugal" width="800" height="534"/>
+        <image name="spain" width="275" height="183"/>
+    </resources>
+</document>
